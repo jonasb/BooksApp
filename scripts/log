@@ -1,0 +1,1 @@
+clear && adb -d logcat | grep "\(BooksApp\)\|\(XXX\)\|\(SQL\)"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="libs/zxing-core.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/google-api-client-1.2.2-alpha.jar" sourcepath="libs/google-api-client-1.2.2-alpha-sources.jar_">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/BooksApp/libs/google-api-client-1.2.2-alpha-javadoc.jar_!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/javacsv.jar"/>
+	<classpathentry kind="lib" path="libs/acra-3.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

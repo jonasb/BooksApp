@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2011 Jonas Bengtsson
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="about">About</string>
+    <string name="about_extra">Copyright \u00a9 2011 Wigwam Labs.\nAll rights reserved.\n\nBased on BooksApp for iPhone\nby Guillermo Gonzalez.</string>
+    <string name="about_by">by Jonas Bengtsson</string>
+    <string name="about_using">Using</string>
+    <string name="active_loans_section">LENT BOOKS</string>
+    <string name="app_name">BooksApp</string>
+    <string name="authors">Authors</string>
+    <string name="book_detail_download_error">Failed to download book information.</string>
+    <string name="book_no_collections">Tap to add to collection.</string>
+    <string name="book_task_abort_toast">Aborted.</string>
+    <string name="book_task_cancel_toast">Cancelled.</string>
+    <string name="by_author">by</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="change_return_date">Change return date</string>
+    <string name="check_all">Select all</string>
+    <string name="checked_all_books_toast">Selected all books.</string>
+    <string name="collections_small">collections</string>
+    <string name="collection_rename_hint">Collection name</string>
+    <string name="collections_section_header">COLLECTIONS</string>
+    <string name="contacts">Friends</string>
+    <string name="create_book">Create book</string>
+    <string name="delete_book">Delete book</string>
+    <plurals name="delete_books"><item quantity="one">Delete book (%d)</item><item quantity="other">Delete books (%d)</item></plurals>
+    <plurals name="deleted_books_toast"><item quantity="one">Deleted book.</item><item quantity="other">Deleted books.</item></plurals>
+    <plurals name="deleted_books_confirmation_message"><item quantity="one">Are you sure you want to delete the book?</item><item quantity="other">Are you sure you want to delete the books?</item></plurals>
+    <string name="delete_collection">Delete collection</string>
+    <string name="delete_button">Delete</string>
+    <string name="dimensions">Dimensions</string>
+    <string name="done_scanning">Done</string>
+    <string name="edit_book">Edit book</string>
+    <string name="edit_button">Edit</string>
+    <string name="error_retry">Error occurred. Retry?</string>
+    <string name="explore_related">Explore similar</string>
+    <plurals name="export_books"><item quantity="one">Export book (%d)</item><item quantity="other">Export books (%d)</item></plurals>
+    <string name="export_failed_toast">Failed to prepare export.</string>
+    <string name="export_google_docs">Upload to Google Docs</string>
+    <string name="export_google_docs_no_accounts_toast">Found no Google accounts.</string>
+    <string name="export_prepare_toast">Preparing export...</string>
+    <string name="export_send">Send spreadsheet</string>
+    <string name="filter_books_hint">Filter</string>
+    <string name="hide_selection">Hide selection</string>
+    <string name="import_button">Import</string>
+    <string name="import_error_cant_read_toast">Import failed. Can\'t read file.</string>
+    <string name="import_error_wrong_format_toast">No book information to import.</string>
+	<string-array name="import_options">
+		<item>Skip duplicates</item>
+		<item>Import ratings</item>
+		<item>Import collections</item>
+		<item>Import notes</item>
+		<item>Download covers</item>
+	</string-array>
+    <string name="imported_no_books_toast">No books to import.</string>
+    <plurals name="imported_books_toast"><item quantity="one">Imported %d book.</item><item quantity="other">Imported %d books.</item></plurals>
+    <string name="inactive_loans_section">RETURNED BOOKS</string>
+    <string-array name="initial_collections">
+        <item>Favorites</item>
+        <item>Reading now</item>
+        <item>To read</item>
+        <item>Have read</item>
+    </string-array>
+    <string name="isbn_missing_create_toast">Couldn\'t find book with ISBN: %s.</string>
+    <string name="isbn_small">isbn</string>
+    <string name="isbn10">ISBN-10</string>
+    <string name="isbn13">ISBN-13</string>
+    <string name="isbn_search_unknown_toast">Searching for book.</string>
+    <string name="lend_book">Lend book</string>
+    <string name="list_books">Books</string>
+    <string name="loading">Loading...</string>
+    <string name="loan_notification_text">Loan(s) expired</string>
+    <string name="loan_notification_ticker">\"%s\" loan expired</string>
+    <string name="loan_notification_title">BooksApp</string>
+    <string name="lent_until">Lent to %1$s until %2$s.</string>
+    <string name="new_collection_hint">New collection</string>
+    <string name="no_authors">No authors.</string>
+    <string name="no_books">No books.</string>
+    <string name="no_contacts">No friends.</string>
+    <string name="no_contacts_description">(Add friends by lending them a book)</string>
+    <string name="no_loans">Book has never been lent.</string>
+    <string name="no_matches">No matches.</string>
+    <string name="no_publishers">No publishers.</string>
+    <string name="no_series">No series.</string>
+    <string name="no_subjects">No subjects.</string>
+    <string name="notes">Notes</string>
+    <string name="open_book">Open book</string>
+    <string name="open_collection">Open collection</string>
+    <string name="overview">Overview</string>
+    <string name="overview_small">overview</string>
+    <string name="page_count">Page count</string>
+    <plurals name="page_count_format"><item quantity="one">%d page</item><item
+        quantity="other">%d pages</item></plurals>
+    <string name="published_small">published</string>
+    <string name="published_at_with_format">Published (y-m-d)</string>
+    <string name="publisher">Publisher</string>
+    <string name="publisher_menu_item">Publishers</string>
+    <string name="remove_from_collection">Remove from collection</string>
+    <string name="remove_from_collection_count">Remove from collection (%d)</string>
+    <plurals name="removed_from_collection_toast"><item quantity="one">Removed book from collection.</item><item quantity="other">Removed books from collection.</item></plurals>
+    <string name="rename_button">Rename</string>
+    <string name="rename_collection">Rename collection</string>
+    <string name="return_book">Return book</string>
+    <string name="save_button">Save</string>
+    <string name="save_book">Save book</string>
+    <plurals name="save_books"><item quantity="one">Save book (%d)</item><item quantity="other">Save books (%d)</item></plurals>
+    <plurals name="saved_books_toast"><item quantity="one">Saved book.</item><item quantity="other">Saved books.</item></plurals>
+    <string name="scan_barcode">Scan barcode</string>
+    <string name="scan_intro_toast">Scan one or more books.</string>
+    <string name="scan_button_press_toast">Just keep barcode inside box until focused.</string>
+    <string name="scanned_duplicate_toast">Book is already scanned.</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search books</string>
+    <string name="series">Series</string>
+    <string name="series_small">series</string>
+    <string name="share_book">Share book</string>
+    <string name="share_no_title_placeholder">Untitled</string>
+    <string name="share_subject">BooksApp recommendation</string>
+    <string name="share_text">Here\'s a book you might enjoy, \"%s\"</string>
+    <string name="share_text_suffix">[via BooksApp]</string>
+    <string name="show_selection">Show selection</string>
+    <string name="size_small">size</string>
+    <string name="subtitle">Sub title</string>
+    <string name="subjects">Subjects</string>
+    <string name="subjects_small">subjects</string>
+    <string name="subjects_menu_item">Subjects</string>
+    <string name="title">Title</string>
+    <string name="uncheck_all">Deselect all</string>
+    <string name="unchecked_all_books_toast">Deselected all books.</string>
+    <string name="upload_failed_toast">Failed.</string>
+    <string name="upload_finished_toast">Finished.</string>
+    <string name="upload_starting_toast">Uploading...</string>
+    <string name="volume">Volume</string>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2011 Jonas Bengtsson
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<com.wigwamlabs.booksapp.TitleBar
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_weight="1.0">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/book_header_layout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="7dp">
+				<ImageView
+					android:id="@+id/thumbnail"
+					android:layout_width="@dimen/small_thumbnail_width"
+					android:layout_height="@dimen/small_thumbnail_height"
+					android:paddingLeft="3dp" />
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/title"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:gravity="center" />
+					<TextView
+						android:id="@+id/subtitle"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center" />
+					<TextView
+						android:id="@+id/creators"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:paddingTop="3dp"
+						android:paddingBottom="3dp"
+						android:gravity="center"
+						android:textStyle="italic"
+						android:textColorLink="@color/link" />
+					<RatingBar
+						style="?android:attr/ratingBarStyleSmall"
+						android:id="@+id/rating"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:paddingTop="3dp"
+						android:paddingBottom="3dp"
+						android:numStars="5"
+						android:stepSize="0.5" />
+				</LinearLayout>
+			</LinearLayout>
+			<TableLayout
+				android:id="@+id/detail_table_layout"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:shrinkColumns="1">
+				<TableRow>
+					<TextView
+						style="@style/BookDetailSubHeading"
+						android:text="@string/series_small" />
+					<TextView
+						style="@style/BookDetailContent"
+						android:id="@+id/series" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						style="@style/BookDetailSubHeading"
+						android:text="@string/overview_small" />
+					<TextView
+						style="@style/BookDetailContent"
+						android:id="@+id/overview" />
+				</TableRow>
+				<TableRow
+					android:id="@+id/published_row">
+					<TextView
+						style="@style/BookDetailSubHeading"
+						android:text="@string/published_small" />
+					<TextView
+						style="@style/BookDetailContent"
+						android:id="@+id/published" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						style="@style/BookDetailSubHeading"
+						android:text="@string/isbn_small" />
+					<TextView
+						style="@style/BookDetailContent"
+						android:id="@+id/isbns" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						style="@style/BookDetailSubHeading"
+						android:text="@string/subjects_small" />
+					<TextView
+						style="@style/BookDetailContent"
+						android:id="@+id/subjects" />
+				</TableRow>
+				<TableRow>
+					<TextView
+						style="@style/BookDetailSubHeading"
+						android:text="@string/size_small" />
+					<TextView
+						style="@style/BookDetailContent"
+						android:id="@+id/size" />
+				</TableRow>
+			</TableLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,3 @@
+rm zxing-core.jar
+ant -f zxing-1.6/core/build.xml build-no-debug
+cp zxing-1.6/core/core.jar zxing-core.jar

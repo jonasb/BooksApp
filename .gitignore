@@ -1,0 +1,10 @@
+local.properties
+.idea/*
+.settings/*
+bin/
+gen/
+libs/*/
+out/
+releases/
+test/src/com/booksapp/test/ui/
+wigwamlabs-release-key.keystore

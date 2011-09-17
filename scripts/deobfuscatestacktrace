@@ -1,0 +1,2 @@
+java -jar c:\\Program\ Files\\proguard4.5.1\\lib\\retrace.jar releases/3-1.2/proguard/mapping.txt releases/obfuscatedstacktrace.txt > releases/stacktrace.txt
+cat releases/stacktrace.txt

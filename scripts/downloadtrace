@@ -1,0 +1,6 @@
+FILE=`mktemp /tmp/XXX.trace`
+FILE_WIN=`cygpath -w "$FILE"`
+echo "Downloading to: $FILE_WIN"
+adb -d pull /mnt/sdcard/booksapp.trace "$FILE_WIN"
+echo "Opening traceview"
+traceview.bat "$FILE_WIN"&

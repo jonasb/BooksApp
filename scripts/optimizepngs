@@ -1,0 +1,2 @@
+find res -type f -name "*.png" -print0 | xargs -0 optipng
+find graphics/market -type f -name "*.png" -print0 | xargs -0 optipng

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2011 Jonas Bengtsson
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<com.wigwamlabs.booksapp.TitleBar
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_weight="1.0">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center">
+				<ImageView
+					android:id="@+id/thumbnail"
+					android:layout_width="@dimen/small_thumbnail_width"
+					android:layout_height="@dimen/small_thumbnail_height"
+					android:paddingLeft="7dp"
+					android:paddingTop="3dp"
+					android:paddingBottom="3dp" />
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:paddingLeft="7dp"
+					android:orientation="vertical">
+					<ImageView
+						android:id="@+id/delete_thumbnail"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/button_delete" />
+					<ImageView
+						android:id="@+id/thumbnail_pick"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:layout_gravity="bottom"
+						android:src="@drawable/button_gallery" />
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/title" />
+			<EditText
+				style="@style/EditBookTextEdit"
+				android:id="@+id/title"
+				android:inputType="textCapWords"
+				android:hint="@string/title" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/subtitle" />
+			<EditText
+				style="@style/EditBookTextEdit"
+				android:id="@+id/subtitle"
+				android:inputType="textCapSentences"
+				android:hint="@string/subtitle" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/authors" />
+			<MultiAutoCompleteTextView
+				style="@style/EditBookTextEdit"
+				android:id="@+id/creators"
+				android:inputType="textPersonName|textCapWords"
+				android:hint="@string/authors" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/series" />
+			<AutoCompleteTextView
+				style="@style/EditBookTextEdit"
+				android:id="@+id/series"
+				android:inputType="textCapWords"
+				android:hint="@string/series" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:id="@+id/volume_label"
+				android:text="@string/volume" />
+			<EditText
+				style="@style/EditBookTextEdit"
+				android:id="@+id/volume"
+				android:numeric="integer"
+				android:hint="@string/volume" />
+			<RatingBar
+				android:id="@+id/rating"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:numStars="5"
+				android:stepSize="0.5" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/overview" />
+			<EditText
+				style="@style/EditBookTextEdit"
+				android:id="@+id/overview"
+				android:inputType="textCapSentences"
+				android:hint="@string/overview" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/publisher" />
+			<AutoCompleteTextView
+				style="@style/EditBookTextEdit"
+				android:id="@+id/publisher"
+				android:inputType="textCapSentences"
+				android:hint="@string/publisher" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/published_at_with_format" />
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<EditText
+					style="@style/EditBookTextEdit"
+					android:id="@+id/release_date"
+					android:layout_width="0px"
+					android:layout_weight="1.0"
+					android:inputType="date"
+					android:hint="@string/published_at_with_format" />
+				<ImageView
+					android:id="@+id/release_date_pick"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:layout_gravity="center"
+					android:padding="3dp"
+					android:src="@drawable/button_date" />
+			</LinearLayout>
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/isbn10" />
+			<EditText
+				style="@style/EditBookTextEdit"
+				android:id="@+id/isbn10"
+				android:hint="@string/isbn10" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/isbn13" />
+			<EditText
+				style="@style/EditBookTextEdit"
+				android:id="@+id/isbn13"
+				android:hint="@string/isbn13" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/page_count" />
+			<EditText
+				style="@style/EditBookTextEdit"
+				android:id="@+id/page_count"
+				android:hint="@string/page_count"
+				android:numeric="integer" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/dimensions" />
+			<EditText
+				style="@style/EditBookTextEdit"
+				android:id="@+id/dimensions"
+				android:hint="@string/dimensions" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/subjects" />
+			<MultiAutoCompleteTextView
+				style="@style/EditBookTextEdit"
+				android:id="@+id/subjects"
+				android:hint="@string/subjects"
+				android:inputType="textCapSentences" />
+			<TextView
+				style="@style/EditBookLabel"
+				android:text="@string/notes" />
+			<EditText
+				style="@style/EditBookTextEdit"
+				android:id="@+id/notes"
+				android:hint="@string/notes"
+				android:imeOptions="actionDone" />
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+		style="@android:style/ButtonBar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/save_button"
+			android:layout_width="0px"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:text="@string/save_button" />
+		<Button
+			android:id="@+id/cancel_button"
+			android:layout_width="0px"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:text="@string/cancel_button" />
+	</LinearLayout>
+</LinearLayout>
